@@ -7,11 +7,8 @@ void is_palindrome(int N)
 	while(temp != 0)
 
 	{
-		n *= 10;
-		n += temp % 10;
-		printf(" %d",n);
-		
-		temp = temp / 10;
+		n = n * 10 + temp % 10;	
+		temp /= 10;
 	}	
 	if(n == N)
 		printf("The Number Is palindrome");
